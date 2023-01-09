@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+     <!-- <p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+<button type="button" onclick="test()" >Test</button>
+
+<button type="button" onclick="myFunc()">New button</button>
+<button type="button" class="btn btn-warning" onclick="alertFunc()">Alert Button</button>
+-->
+
+{% block main %}
+<button class="btn btn-primary" onclick="testFunc()">click me!</button>
+
+<div id="testform" style="display: none;">
+<form>
+    <input class="form-control mx-auto w-auto formInputs" autofocus placeholder="test">name
+</form>
+</div>
+
+
+
+<input name="testInput" placeholder="Testing" id="testInput">
+
+<p id="a1"></p>
+
+<script>
+    var element = document.getElementById("testInput");
+
+    element.addEventListener('input', abcd);
+
+    function abcd() {
+        var t1 = document.getElementById("a1");
+        t1.innerHTML = "hi"
+    }
+</script>
+
+{% endblock %}
+
+<!-- {% block script %}
+    <script>
+        
+    </script>
+{% endblock %} -->
+<!-- hi-->
